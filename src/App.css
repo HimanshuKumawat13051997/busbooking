@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+.dd{
+
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: rgba(161, 158, 158, 0.799);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.insidedd{
+    background-color: rgb(195, 189, 189);
+    border-radius: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.busseats{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-columns: 20px 20px;
+   gap: 5px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.singleseats{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 20px;
+   gap: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.nonhigh{
+   background-color: rgb(226, 232, 240);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.highlighted{
+    background-color: rgb(37 99 235);
+}
+
+.booked{
+    background-color: rgb(220 38 38);
 }
